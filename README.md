@@ -3,7 +3,8 @@ Mobile-API for [nightwave plaza](https://play.google.com/store/apps/details?id=o
 
 ## Example
 ```python
-import nightwave_plaza
-nightwave_plaza = nightwave_plaza.NightWavePlaza()
-nightwave_plaza.login(username="", password="")
+from nightwave_plaza import NightWavePlaza
+
+nwp = NightWavePlaza()
+nwp.login(username="", password="")
 ```
