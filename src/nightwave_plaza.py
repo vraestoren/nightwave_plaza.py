@@ -114,7 +114,9 @@ class NightWavePlaza:
         return self.session.get(f"{self.api}/user").json()
 
     def add_song_to_favorites(self, song_id: str) -> dict:
-        data = {"song_id": song_id}
+        data = {
+            "song_id": song_id
+        }
         return self.session.post(
             f"{self.api}/user/favorites", data=data).json()
     
