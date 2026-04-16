@@ -15,11 +15,11 @@ class NightWavePlaza:
 
 
 	def _post(self, endpoint: str, data: dict = None) -> dict:
-		return self.session.get(
+		return self.session.post(
 			f"{self.api}{endpoint}", data=data).json()
 
 	def _put(self, endpoint: str, data: dict = None) -> dict:
-		return self.session.get(
+		return self.session.put(
 			f"{self.api}{endpoint}", data=data).json()
 
 	def get_status(self) -> dict:
